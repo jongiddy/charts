@@ -68,7 +68,6 @@ data:
       "editable": true,
       "gnetId": 12239,
       "graphTooltip": 0,
-      "id": null,
       "iteration": 1588401887165,
       "links": [],
       "panels": [
@@ -118,7 +117,7 @@ data:
               "expr": "DCGM_FI_DEV_GPU_TEMP{instance=~\"${instance}\", gpu=~\"${gpu}\"}",
               "instant": false,
               "interval": "",
-              "legendFormat": "GPU {{gpu}}",
+              "legendFormat": "GPU {{`{{gpu}}`}}",
               "refId": "A"
             }
           ],
@@ -270,7 +269,7 @@ data:
             {
               "expr": "DCGM_FI_DEV_POWER_USAGE{instance=~\"${instance}\", gpu=~\"${gpu}\"}",
               "interval": "",
-              "legendFormat": "GPU {{gpu}}",
+              "legendFormat": "GPU {{`{{gpu}}`}}",
               "refId": "A"
             }
           ],
@@ -428,7 +427,7 @@ data:
               "format": "time_series",
               "interval": "",
               "intervalFactor": 1,
-              "legendFormat": "GPU {{gpu}}",
+              "legendFormat": "GPU {{`{{gpu}}`}}",
               "refId": "A"
             }
           ],
@@ -519,7 +518,7 @@ data:
             {
               "expr": "DCGM_FI_DEV_GPU_UTIL{instance=~\"${instance}\", gpu=~\"${gpu}\"}",
               "interval": "",
-              "legendFormat": "GPU {{gpu}}",
+              "legendFormat": "GPU {{`{{gpu}}`}}",
               "refId": "A"
             }
           ],
@@ -608,7 +607,7 @@ data:
             {
               "expr": "DCGM_FI_DEV_FB_USED{instance=~\"${instance}\", gpu=~\"${gpu}\"}",
               "interval": "",
-              "legendFormat": "GPU {{gpu}}",
+              "legendFormat": "GPU {{`{{gpu}}`}}",
               "refId": "A"
             }
           ],
@@ -698,7 +697,7 @@ data:
             {
               "expr": "DCGM_FI_PROF_PIPE_TENSOR_ACTIVE{instance=~\"${instance}\", gpu=~\"${gpu}\"}",
               "interval": "",
-              "legendFormat": "GPU {{gpu}}",
+              "legendFormat": "GPU {{`{{gpu}}`}}",
               "refId": "A"
             }
           ],
