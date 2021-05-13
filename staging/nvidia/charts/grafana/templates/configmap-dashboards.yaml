@@ -76,7 +76,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -163,7 +163,7 @@ data:
           }
         },
         {
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "gridPos": {
             "h": 8,
             "w": 6,
@@ -228,7 +228,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -316,7 +316,7 @@ data:
         },
         {
           "cacheTimeout": null,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "gridPos": {
             "h": 8,
             "w": 6,
@@ -383,7 +383,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -478,7 +478,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -568,7 +568,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -657,7 +657,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -752,7 +752,7 @@ data:
           {
             "allValue": null,
             "current": {},
-            "datasource": "${DS_PROMETHEUS}",
+            "datasource": "Prometheus",
             "definition": "label_values(DCGM_FI_DEV_GPU_TEMP, instance)",
             "hide": 0,
             "includeAll": false,
@@ -774,7 +774,7 @@ data:
           {
             "allValue": null,
             "current": {},
-            "datasource": "${DS_PROMETHEUS}",
+            "datasource": "Prometheus",
             "definition": "label_values(gpu)",
             "hide": 0,
             "includeAll": true,
