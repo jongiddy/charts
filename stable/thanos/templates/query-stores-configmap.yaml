@@ -1,6 +1,6 @@
 {{ $ns := .Release.Namespace }}
-{{ $labels := include "kommander-thanos.labels" . | indent 4  }}
-{{ $sa := include "kommander-thanos.sa-name" . }}
+{{ $labels := include "thanos.labels" . | indent 4  }}
+{{ $sa := include "thanos.sa-name" . }}
 {{- if .Values.thanos.query.enabled }}
 {{- range .Values.thanos.query.serviceDiscoveryFileConfigMaps }}
 ---

@@ -1,7 +1,6 @@
-# Kommander Thanos helm chart
+# Thanos helm chart
 
 This chart deploys [Thanos](https://github.com/thanos-io/thanos) configured for Kommander, along with supporting resources and addons.
-This chart is intended to be used only as a subchart of the `kommander` chart.
 
 All the supported values and their defaults are listed below:
 
@@ -37,7 +36,7 @@ thanos:
     stores: []
     # Names of configmaps that contain addresses of store API servers, used for file service discovery.
     serviceDiscoveryFileConfigMaps:
-    - kommander-thanos-query-stores
+    - thanos-query-stores
     # Refresh interval to re-read file SD files. It is used as a resync fallback.
     serviceDiscoveryInterval: 5m
     # Add extra arguments to the compact service
@@ -47,7 +46,7 @@ thanos:
     - "--grpc-client-tls-key=/etc/certs/tls.key"
     - "--grpc-client-tls-ca=/etc/certs/ca.crt"
     - "--grpc-client-server-name=server.thanos.localhost.localdomain"
-    certSecretName: kommander-thanos-client-tls
+    certSecretName: thanos-client-tls
     http:
       ingress:
         enabled: true

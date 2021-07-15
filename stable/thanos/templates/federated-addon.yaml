@@ -3,10 +3,10 @@
 apiVersion: types.kubefed.io/v1beta1
 kind: FederatedAddon
 metadata:
-  name: {{ include "kommander-thanos.short-name-prefix" . }}-proxy
+  name: {{ include "thanos.short-name-prefix" . }}-proxy
   namespace: {{ .Values.federate.systemNamespace.name }}
   labels:
-{{ include "kommander-thanos.labels" . | indent 4 }}
+{{ include "thanos.labels" . | indent 4 }}
 spec:
   placement:
     clusterSelector:
@@ -17,7 +17,7 @@ spec:
     metadata:
       namespace: kubeaddons
       labels:
-        kubeaddons.mesosphere.io/name: {{ include "kommander-thanos.short-name-prefix" . }}-proxy
+        kubeaddons.mesosphere.io/name: {{ include "thanos.short-name-prefix" . }}-proxy
     spec:
       namespace: {{ .Values.federate.systemNamespace.name }}
       chartReference:
@@ -27,7 +27,7 @@ spec:
         values: |
           ---
           target: {{ required "thanos address must be set" .Values.thanosAddress }}
-          certSecretName: {{ template "kommander-thanos.fullname" . }}-server-tls
+          certSecretName: {{ template "thanos.fullname" . }}-server-tls
           ingress:
             enabled: false
           service:
@@ -39,5 +39,5 @@ spec:
             port: 443
           deployment:
             annotations:
-              secret.reloader.stakater.com/reload: {{ template "kommander-thanos.fullname" . }}-server-tls
+              secret.reloader.stakater.com/reload: {{ template "thanos.fullname" . }}-server-tls
 {{ end }}
