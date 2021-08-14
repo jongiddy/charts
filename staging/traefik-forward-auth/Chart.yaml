@@ -8,7 +8,7 @@ keywords:
   - traefik-forward-auth
   - traefik
   - oauth
-home: https://github.com/mesosphere/traefik-forward-auth
+home: https://github.com/jongiddy
 maintainers:
   - name: jongiddy
     email: jgiddy@d2iq.com
